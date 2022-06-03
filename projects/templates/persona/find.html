@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Persona Find</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <fieldset>
+      <legend>Datos personales</legend>
+      <input type="text" name="id" value="#if(!$id)0#else$id#end" hidden>
+      
+      <label for="nombres">Nombres</label>
+      <input type="text" name="nombres" value="$!nombres" id="nombres"><br><br>
+  
+      <label for="apellidos">Apellidos</label>
+      <input type="text" name="apellidos" value="$!apellidos" id="apellidos"><br><br>
+  
+      <label for="peso">Peso</label>
+      <input type="text" name="peso" value="$!peso" id="peso"> <br><br>
+      
+      <label for="estado">Estado</label>
+      <input type="text" name="estado" value="$!estado" id="estado"> <br><br>
+      
+      <button type="submit">Guardar</button> <a href="#">Nuevo</a>
+    </fieldset>
+  </body>
+</html>
